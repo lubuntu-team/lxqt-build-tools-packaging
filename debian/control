@@ -6,7 +6,6 @@ Section: devel
 Priority: optional
 Build-Depends: debhelper (>= 10),
                cmake (>= 3.0.2),
-               pkg-config
 Standards-Version: 3.9.8
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-lxqt/lxqt-build-tools.git/?h=lxqt-snapshots/latest
 Vcs-Git: https://anonscm.debian.org/git/pkg-lxqt/lxqt-build-tools.git -b lxqt-snapshots/latest
