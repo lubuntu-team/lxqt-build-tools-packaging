@@ -13,7 +13,7 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-lxqt/lxqt-build-tools.git -b lxqt-sn
 Homepage: https://github.com/lxde/lxqt-build-tools
 
 Package: lxqt-build-tools
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          pkg-config,
