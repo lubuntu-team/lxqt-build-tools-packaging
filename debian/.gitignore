@@ -4,6 +4,4 @@
 /debhelper-build-stamp
 /files
 
-/liblxqt0/
-/liblxqt0-dev/
-/tmp
+/lxqt-build-tools/

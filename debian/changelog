@@ -1,3 +1,12 @@
+lxqt-build-tools (0.2.0-1) unstable; urgency=medium
+
+  * Cherry-picking upstream release 0.2.0
+  * Added build dependency qtbase5-dev
+  * Added dependency cmake (>= 3.0.2)
+  * Switch Architecture to any again
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 30 Oct 2016 15:39:40 +0100
+
 lxqt-build-tools (0.1.0-1) unstable; urgency=medium
 
   * Initial release (Closes: #839943)
