@@ -17,6 +17,7 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          cmake (>= 3.0.2),
+         libqt5xdg-dev (>= 2.0.0), 
          pkg-config,
          qttools5-dev,
          qttools5-dev-tools
