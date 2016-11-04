@@ -1,8 +1,8 @@
-lxqt-build-tools (0.2.0-3) lxqt-snapshots; urgency=medium
+lxqt-build-tools (0.2.0-3) unstable; urgency=medium
 
   * Added missed dependency libqt5xdg-dev (>= 2.0.0)
 
- -- Alf Gaida <agaida@siduction.org>  Fri, 04 Nov 2016 18:56:17 +0100
+ -- Alf Gaida <agaida@siduction.org>  Fri, 04 Nov 2016 19:23:20 +0100
 
 lxqt-build-tools (0.2.0-1) unstable; urgency=medium
 
