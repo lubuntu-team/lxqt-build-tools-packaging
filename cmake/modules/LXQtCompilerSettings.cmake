@@ -28,6 +28,13 @@
 #=============================================================================
 
 #-----------------------------------------------------------------------------
+# Build with release mode by default (turn on compiler optimizations)
+#-----------------------------------------------------------------------------
+if (NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release)
+endif()
+
+#-----------------------------------------------------------------------------
 # Honor visibility properties for all target types.
 #
 # The ``<LANG>_VISIBILITY_PRESET`` and
@@ -112,12 +119,40 @@ endif()
 # Do not allow undefined symbols
 #-----------------------------------------------------------------------------
 if (CMAKE_COMPILER_IS_GNUCXX OR LXQT_COMPILER_IS_CLANGCXX)
+    # -Bsymbolic-functions: replace dynamic symbols used internally in
+    #                       shared libs with direct addresses.
+    set(SYMBOLIC_FLAGS
+        "-Wl,-Bsymbolic-functions -Wl,-Bsymbolic"
+    )
     set(CMAKE_SHARED_LINKER_FLAGS
-        "-Wl,--no-undefined ${CMAKE_SHARED_LINKER_FLAGS}"
+        "-Wl,--no-undefined ${SYMBOLIC_FLAGS} ${CMAKE_SHARED_LINKER_FLAGS}"
     )
     set(CMAKE_MODULE_LINKER_FLAGS
-        "-Wl,--no-undefined ${CMAKE_MODULE_LINKER_FLAGS}"
+        "-Wl,--no-undefined ${SYMBOLIC_FLAGS} ${CMAKE_MODULE_LINKER_FLAGS}"
     )
+    set(CMAKE_EXE_LINKER_FLAGS
+        "${SYMBOLIC_FLAGS} ${CMAKE_EXE_LINKER_FLAGS}"
+    )
+
+endif()
+
+
+#-----------------------------------------------------------------------------
+# Turn on more aggrassive optimizations not supported by CMake
+# References: https://wiki.qt.io/Performance_Tip_Startup_Time
+#-----------------------------------------------------------------------------
+if (CMAKE_COMPILER_IS_GNUCXX OR LXQT_COMPILER_IS_CLANGCXX)
+    # -flto: use link-time optimizations to generate more efficient code
+    if (CMAKE_COMPILER_IS_GNUCXX)
+        set(LTO_FLAGS "-flto -fuse-linker-plugin")
+    elseif (LXQT_COMPILER_IS_CLANGCXX)
+        # The link-time optimization of clang++/llvm seems to be too aggrassive.
+        # After testing, it breaks the signal/slots of QObject sometimes.
+        # So disable it for now until there is a solution.
+        # set(LTO_FLAGS "-flto")
+    endif()
+    # apply these options to "Release" build type only
+    set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} ${LTO_FLAGS}")
 endif()
 
 
@@ -132,6 +167,15 @@ elseif(COMPILER_SUPPORTS_CXX0X)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 else()
     message(FATAL "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. C++11 support is required")
+endif()
+
+
+#-----------------------------------------------------------------------------
+# Enable colored diagnostics for the CLang/Ninja combination
+#-----------------------------------------------------------------------------
+if (LXQT_COMPILER_IS_CLANGCXX AND CMAKE_GENERATOR STREQUAL "Ninja")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fcolor-diagnostics")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fcolor-diagnostics")
 endif()
 
 
