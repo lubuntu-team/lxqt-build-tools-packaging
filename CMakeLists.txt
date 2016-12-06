@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
-
 project(lxqt-build-tools)
+
+cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
 
 option(WITH_XDG_DIRS_FALLBACK "Use our XDG_CONFIG_DIRS fallback" ON)
 
@@ -64,7 +64,7 @@ file(COPY
 
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/lxqt-build-tools-config.cmake.in"
-    "${CMAKE_BINARY_DIR}/lxqt-build-tools.cmake"
+    "${CMAKE_BINARY_DIR}/lxqt-build-tools-config.cmake"
     INSTALL_DESTINATION "neverland"     # required, altough we don't install it
     PATH_VARS
         MODULES_INSTALL_DIR

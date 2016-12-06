@@ -1,3 +1,10 @@
+lxqt-build-tools (0.3.0-1) unstable; urgency=medium
+
+  * Cherry-picking upstream version 0.3.0.
+  * Fixed VCS-Fields to branch debian/sid 
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 06 Dec 2016 22:27:16 +0100
+
 lxqt-build-tools (0.2.0-3) unstable; urgency=medium
 
   * Added missed dependency libqt5xdg-dev (>= 2.0.0)
