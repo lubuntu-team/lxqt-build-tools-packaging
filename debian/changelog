@@ -1,3 +1,10 @@
+lxqt-build-tools (0.3.1-1) unstable; urgency=medium
+
+  * Cherry-picking upstream version 0.3.1.
+  * Bumped years in d/copyright
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 02 Jan 2017 02:59:25 +0100
+
 lxqt-build-tools (0.3.0-1) unstable; urgency=medium
 
   * Cherry-picking upstream version 0.3.0.

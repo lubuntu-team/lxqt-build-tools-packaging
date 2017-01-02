@@ -4,11 +4,11 @@ Source: https://github.com/lxde/lxqt-build-tools
 
 Files: *
 Copyright: 2010-2012 Razor team 
-           2012-2016 LXQt team
+           2012-2017 LXQt team
 License: BSD-3-Clause
 
 Files: debian/*
-Copyright: 2016 Alf Gaida <agaida@siduction.org>
+Copyright: 2016-2017 Alf Gaida <agaida@siduction.org>
 License: BSD-3-Clause
 
 License: BSD-3-Clause
