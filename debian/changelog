@@ -1,3 +1,10 @@
+lxqt-build-tools (0.3.2-1) unstable; urgency=medium
+
+  * Cherry-picking upstream version 0.3.2.
+  * Switched Architecture any --> all  
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 14 Jan 2017 00:55:40 +0100
+
 lxqt-build-tools (0.3.1-1) unstable; urgency=medium
 
   * Cherry-picking upstream version 0.3.1.
