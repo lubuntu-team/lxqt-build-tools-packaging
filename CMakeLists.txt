@@ -6,8 +6,8 @@ option(WITH_XDG_DIRS_FALLBACK "Use our XDG_CONFIG_DIRS fallback" ON)
 
 set(LXQT_BUILD_TOOLS_MAJOR_VERSION 0)
 set(LXQT_BUILD_TOOLS_MINOR_VERSION 3)
-set(LXQT_BUILD_TOOLS_PATCH_VERSION 1)
-set(LXQT_BUILD_TOOLS_VERSION ${LXQT_BUILD_TOOLS_MAJOR_VERSION}.${LXQT_BUILD_TOOLS_MINOR_VERSION}${LXQT_BUILD_TOOLS_PATCH_VERSION})
+set(LXQT_BUILD_TOOLS_PATCH_VERSION 2)
+set(LXQT_BUILD_TOOLS_VERSION ${LXQT_BUILD_TOOLS_MAJOR_VERSION}.${LXQT_BUILD_TOOLS_MINOR_VERSION}.${LXQT_BUILD_TOOLS_PATCH_VERSION})
 
 set(LXQT_MAJOR_VERSION 0)
 set(LXQT_MINOR_VERSION 11)
@@ -101,10 +101,10 @@ configure_file(
 )
 
 # The package version file is common to superbuild and installable mode
-write_basic_package_version_file(
-    "${CMAKE_BINARY_DIR}/lxqt-build-tools-config-version.cmake"
-    VERSION ${LXQT_BUILD_TOOLS_VERSION}
-    COMPATIBILITY AnyNewerVersion
+configure_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/lxqt-build-tools-config-version.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/lxqt-build-tools-config-version.cmake"
+    @ONLY
 )
 
 install(FILES
