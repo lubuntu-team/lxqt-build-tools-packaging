@@ -1,0 +1,3 @@
+#!/bin/bash
+
+lintian -EvIL +pedantic --show-overrides --no-tag-display-limit *changes
