@@ -18,9 +18,12 @@ Package: lxqt-build-tools
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
+         binutils,
          cmake (>= 3.0.2),
-         libqt5xdg-dev (>= 2.0.0),
+         git,
+         libqt5xdg-dev (>= 3.0.0),
          libglib2.0-dev (>= 2.5.0),
+         lintian,
          pkg-config,
          qttools5-dev,
          qttools5-dev-tools

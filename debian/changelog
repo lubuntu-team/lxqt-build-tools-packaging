@@ -1,9 +1,14 @@
-lxqt-build-tools (0.3.96-1) experimental; urgency=medium
+lxqt-build-tools (0.4.0-1) experimental; urgency=medium
 
-  * New snapshot: 0.3.2-8-gfc0d797
-  * switch to experimental
+  * Cherry-picking new upstream release
+  * Added some pkg-lxqt tools:
+    - evil: the (in)famous lintian -EvIL ...
+    - mangle: mangle single symbols
+    - symmangle: mangle whole symbol files
+    - git-versions: get current upstream git versions
+    - get-snapshot: get a git snapshot
 
- -- Alf Gaida <agaida@siduction.org>  Tue, 25 Jul 2017 01:18:13 +0200
+ -- Alf Gaida <agaida@siduction.org>  Sat, 23 Sep 2017 15:56:32 +0200
 
 lxqt-build-tools (0.3.2-1) unstable; urgency=medium
 

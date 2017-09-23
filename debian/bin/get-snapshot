@@ -5,7 +5,7 @@
 # Licensetext
 # Usage:
 # get-snapshot (in package dir)
-# one will need a debian/repository file in place
+# one will need a debian/repository.spec file in place
 
 unset commit
 unset branch

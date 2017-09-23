@@ -1,4 +1,12 @@
 #!/bin/bash
+# Copyright 2015-2017 Alf Gaida <agaida@siduction.org>
+# License: WTFPL-2
+#
+# Usage:
+#
+#
+#
+#
 
 if [ -d ./debian ]; then
     for i in `find . -name symbols`; do
