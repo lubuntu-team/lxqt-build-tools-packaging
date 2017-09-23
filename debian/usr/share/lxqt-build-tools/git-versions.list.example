@@ -1,0 +1,61 @@
+repositories="\
+    ==0== \
+    libqtxdg \
+    \
+    ==I== \
+    lxqt-build-tools \
+    \
+    ==II== \
+    liblxqt \
+    libsysstat \
+    \
+    ==III== \
+    compton-conf \
+    libfm-qt \
+    lxqt-l10n \
+    lxqt-themes \
+    obconf-qt \
+    pavucontrol-qt \
+    qtermwidget \
+    \
+    ==IV== \
+    lximage-qt \
+    lxqt-about \
+    lxqt-admin \
+    lxqt-config \
+    lxqt-globalkeys \
+    lxqt-notificationd \
+    lxqt-openssh-askpass \
+    lxqt-policykit \
+    lxqt-powermanagement \
+    lxqt-qtplugin \
+    lxqt-session \
+    lxqt-sudo \
+    pcmanfm-qt \
+    qterminal \
+    \
+    ==V== \
+    lxqt-panel \
+    lxqt-runner \
+    \
+    ==VI== \
+    cmst \
+    juffed \
+    nomacs \
+    qlipper \
+    qps \
+    screengrab \
+    trojita \
+    \
+    ==MISC== \
+    calamares \
+    connman \
+    fswatch \
+    libfm \
+    menu-cache \
+    meteo-qt \
+    orbital \
+    qtstyleplugins \
+    quassel \
+    sddm \
+    vokoscreen"

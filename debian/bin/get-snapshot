@@ -1,0 +1,59 @@
+#!/bin/bash
+
+# Author: 2015-2017 Alf Gaida <agaida@siduction.org>
+# License: WTFPL-2.0
+# Licensetext
+# Usage:
+# get-snapshot (in package dir)
+# one will need a debian/repository file in place
+
+unset commit
+unset branch
+target_dir="snapshot"
+
+[ ! -d debian ] && echo "No debian dir found!" && exit 1
+
+if [ -f "debian/repository.spec" ]; then
+    source debian/repository.spec
+else
+    echo "File debian/repository.spec not found!"
+    echo "Copied example spec to debian/"
+    cp /usr/share/lxqt-build-tools/repository.spec.example debian/repository.spec
+    exit 2;
+fi
+
+ls | grep -v "debian" | xargs rm -rf
+rm -rf .pc
+
+echo ""
+echo "┌───────────────────┐"
+echo "│ Upstream Settings │"
+echo "└───────────────────┘"
+[ ! -z "${repository}" ] && echo "repository: ${repository}"
+[ ! -z "${branch}" ] && echo "branch: ${branch}"
+[ ! -z "${commit}" ] && echo "commit: ${commit}"
+[ ! -z "${target_dir}" ] && echo "target_dir: ${target_dir}"
+echo ""
+
+declare -f "cleanup"
+declared=$?
+echo ""
+
+snapdir=$(mktemp -d)
+
+pushd "$snapdir" &>/dev/null
+    echo "git clone ${branch} ${repository} ${target_dir}"
+    git clone ${branch} ${repository} ${target_dir}
+    pushd snapshot &>/dev/null
+        [  ! -z "${commit}" ] &&  git reset --hard "${commit}"
+        description=$(git describe --tags)
+        # cleanup must be defined in repository
+        [ "$declared" ] && cleanup
+    popd &>/dev/null
+    tar cfJ snapshot.orig.tar.xz snapshot
+popd &>/dev/null
+tar xf "$snapdir/snapshot.orig.tar.xz" --strip-components 1
+echo ""
+echo "New snapshot: $description"
+dch "New snapshot: $description"
+rm -rf "$snapdir"
