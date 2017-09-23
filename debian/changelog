@@ -1,6 +1,6 @@
 lxqt-build-tools (0.4.0-1) experimental; urgency=medium
 
-  * Cherry-picking new upstream release
+  * Cherry-picking new upstream release 0.4.0
   * Added some pkg-lxqt tools:
     - evil: the (in)famous lintian -EvIL ...
     - mangle: mangle single symbols
@@ -8,7 +8,7 @@ lxqt-build-tools (0.4.0-1) experimental; urgency=medium
     - git-versions: get current upstream git versions
     - get-snapshot: get a git snapshot
 
- -- Alf Gaida <agaida@siduction.org>  Sat, 23 Sep 2017 16:05:32 +0200
+ -- Alf Gaida <agaida@siduction.org>  Sat, 23 Sep 2017 16:28:13 +0200
 
 lxqt-build-tools (0.3.2-1) unstable; urgency=medium
 
