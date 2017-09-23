@@ -8,7 +8,7 @@ lxqt-build-tools (0.4.0-1) experimental; urgency=medium
     - git-versions: get current upstream git versions
     - get-snapshot: get a git snapshot
 
- -- Alf Gaida <agaida@siduction.org>  Sat, 23 Sep 2017 15:56:32 +0200
+ -- Alf Gaida <agaida@siduction.org>  Sat, 23 Sep 2017 16:05:32 +0200
 
 lxqt-build-tools (0.3.2-1) unstable; urgency=medium
 
