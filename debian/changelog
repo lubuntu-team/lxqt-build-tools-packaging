@@ -1,3 +1,13 @@
+lxqt-build-tools (0.4.0-2) experimental; urgency=medium
+
+  * Fixed symmangle - sort order is defined by LC_ALL, so using
+    LC_ALL=C is a good idea in the script
+  * Renamed get-snapshot to git-snapshot
+  * Bumped qtxdg dependency to >= 3.1.0
+  * Added lintian-overrides
+ 
+ -- Alf Gaida <agaida@siduction.org>  Sun, 22 Oct 2017 17:01:49 +0200
+
 lxqt-build-tools (0.4.0-1) experimental; urgency=medium
 
   * Cherry-picking new upstream release 0.4.0
