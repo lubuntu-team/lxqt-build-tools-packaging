@@ -1,3 +1,32 @@
+lxqt-build-tools (0.4.0-3) experimental; urgency=medium
+
+  * Demote git and lintian to recommends - if not installed some dev-scripts
+    will not  work, a dev should know how to handle the situation.
+
+ -- Alf Gaida <agaida@siduction.org>  Wed, 25 Oct 2017 01:42:18 +0200
+
+lxqt-build-tools (0.4.0-2) experimental; urgency=medium
+
+  * Fixed symmangle - sort order is defined by LC_ALL, so using
+    LC_ALL=C is a good idea in the script
+  * Renamed get-snapshot to git-snapshot
+  * Bumped qtxdg dependency to >= 3.1.0
+  * Added lintian-overrides
+ 
+ -- Alf Gaida <agaida@siduction.org>  Sun, 22 Oct 2017 17:01:49 +0200
+
+lxqt-build-tools (0.4.0-1) experimental; urgency=medium
+
+  * Cherry-picking new upstream release 0.4.0
+  * Added some pkg-lxqt tools:
+    - evil: the (in)famous lintian -EvIL ...
+    - mangle: mangle single symbols
+    - symmangle: mangle whole symbol files
+    - git-versions: get current upstream git versions
+    - get-snapshot: get a git snapshot
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 23 Sep 2017 16:28:13 +0200
+
 lxqt-build-tools (0.3.2-1) unstable; urgency=medium
 
   * Cherry-picking upstream version 0.3.2.

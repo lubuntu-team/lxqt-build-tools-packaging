@@ -1,0 +1,7 @@
+# Yes, we know
+
+lxqt-build-tools: binary-without-manpage usr/bin/evil
+lxqt-build-tools: binary-without-manpage usr/bin/git-snapshot
+lxqt-build-tools: binary-without-manpage usr/bin/git-versions
+lxqt-build-tools: binary-without-manpage usr/bin/mangle
+lxqt-build-tools: binary-without-manpage usr/bin/symmangle

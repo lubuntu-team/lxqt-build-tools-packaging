@@ -26,6 +26,45 @@
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #=============================================================================
 
-# Usage: mangle $symbolstring
+# Usage: git versions
+# one should have a valid versions list in the source dir
 
-echo "A: $@" | sed 's/ \(_.*\) \(.*\)/ (c++)"\1" \2/' | c++filt
+[ ! -d "auto" ] && mkdir auto
+echo "Current Repository Versions"
+echo "==========================="
+
+if [ ! -f ./.git-versions.list ]; then
+    echo "Please create a valid ./.git-verisions.list"
+    echo "One can find the LXQt template  in /usr/share/lxqt-build-tools"
+else
+    source ./.git-versions.list
+fi
+
+for i in $repositories; do
+    if [[ "$i" =~ "==" ]]; then
+        echo ""
+        echo "$i"
+    else
+        pushd $i >/dev/null
+        if [ ! -d upstream ]; then
+            echo "$i: please clone  upstream"
+        else
+            pushd upstream &>/dev/null
+            # cleanup possible debris and make sure we are on master
+            git reset --hard &>/dev/null
+            # git clean -ffdx &>/dev/null
+            git remote prune origin &>/dev/null
+            git checkout master &>/dev/null
+            ## end cleanup
+            oldversion=$(git describe --tags --dirty 2>/dev/null)
+            [[ -z "$oldversion" ]] && oldversion=$(git describe --tags --dirty)
+            git pull --all --tags >/dev/null 2>/dev/null
+            version=$(git describe --tags --dirty 2>/dev/null)
+            [[ -z "$version" ]] && version=$(git describe --tags --dirty)
+            unset new && [ "$oldversion" != "$version" ] && new="NEW!!"
+            echo "$i: $version $new"
+            popd &>/dev/null
+        fi
+        popd &>/dev/null
+    fi
+done
