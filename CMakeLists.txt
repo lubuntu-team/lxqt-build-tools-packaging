@@ -5,14 +5,16 @@ cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
 option(WITH_XDG_DIRS_FALLBACK "Use our XDG_CONFIG_DIRS fallback" ON)
 
 set(LXQT_BUILD_TOOLS_MAJOR_VERSION 0)
-set(LXQT_BUILD_TOOLS_MINOR_VERSION 3)
-set(LXQT_BUILD_TOOLS_PATCH_VERSION 2)
+set(LXQT_BUILD_TOOLS_MINOR_VERSION 4)
+set(LXQT_BUILD_TOOLS_PATCH_VERSION 0)
 set(LXQT_BUILD_TOOLS_VERSION ${LXQT_BUILD_TOOLS_MAJOR_VERSION}.${LXQT_BUILD_TOOLS_MINOR_VERSION}.${LXQT_BUILD_TOOLS_PATCH_VERSION})
 
-set(LXQT_MAJOR_VERSION 0)
-set(LXQT_MINOR_VERSION 11)
-set(LXQT_PATCH_VERSION 1)
-set(LXQT_VERSION ${LXQT_MAJOR_VERSION}.${LXQT_MINOR_VERSION}.${LXQT_PATCH_VERSION})
+
+# Check for needed versions
+# We need at least Qt 5.6.1 and glib-2.0 >= 2.50 to build all LXQt parts
+find_package(PkgConfig REQUIRED)
+find_package(Qt5Core "5.6.1"  REQUIRED)
+pkg_check_modules(GLIB2 glib-2.0>=2.50 REQUIRED)
 
 include(CMakePackageConfigHelpers)
 include(GNUInstallDirs) # Standard directories for installation
@@ -103,7 +105,7 @@ configure_file(
 # The package version file is common to superbuild and installable mode
 configure_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/lxqt-build-tools-config-version.cmake.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/lxqt-build-tools-config-version.cmake"
+    "${CMAKE_BINARY_DIR}/lxqt-build-tools-config-version.cmake"
     @ONLY
 )
 
