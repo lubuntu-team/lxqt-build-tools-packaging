@@ -1,3 +1,9 @@
+lxqt-build-tools (0.4.0-4) unstable; urgency=medium
+
+  * Switch to unstable 
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 04 Dec 2017 02:49:26 +0100
+
 lxqt-build-tools (0.4.0-3) experimental; urgency=medium
 
   * Demote git and lintian to recommends - if not installed some dev-scripts
