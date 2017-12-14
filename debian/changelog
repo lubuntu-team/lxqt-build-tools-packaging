@@ -1,3 +1,11 @@
+lxqt-build-tools (0.4.0-5) unstable; urgency=medium
+
+  * Bumped Standards to 4.1.2
+  * Removed branch from VCS fields
+  * Removed debian/gbp.conf 
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 14 Dec 2017 18:28:07 +0100
+
 lxqt-build-tools (0.4.0-4) unstable; urgency=medium
 
   * Switch to unstable 
