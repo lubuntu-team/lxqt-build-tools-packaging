@@ -1,14 +1,27 @@
+lxqt-build-tools (0.4.0-6) unstable; urgency=medium
+
+  * Bumped compat to 11
+  * Bumped debhelper to >= 11~
+  * Removed cmake minimum version
+  * Bumped Standards to 4.1.4
+  * Changed VCS fields for salsa
+  * Fixed homepage and Sources url to /lxqt
+  * Bumped years in copyright
+  * Removed trailing whitespaces
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 26 Apr 2018 20:48:51 +0200
+
 lxqt-build-tools (0.4.0-5) unstable; urgency=medium
 
   * Bumped Standards to 4.1.2
   * Removed branch from VCS fields
-  * Removed debian/gbp.conf 
+  * Removed debian/gbp.conf
 
  -- Alf Gaida <agaida@siduction.org>  Thu, 14 Dec 2017 18:28:07 +0100
 
 lxqt-build-tools (0.4.0-4) unstable; urgency=medium
 
-  * Switch to unstable 
+  * Switch to unstable
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 04 Dec 2017 02:49:26 +0100
 
@@ -26,7 +39,7 @@ lxqt-build-tools (0.4.0-2) experimental; urgency=medium
   * Renamed get-snapshot to git-snapshot
   * Bumped qtxdg dependency to >= 3.1.0
   * Added lintian-overrides
- 
+
  -- Alf Gaida <agaida@siduction.org>  Sun, 22 Oct 2017 17:01:49 +0200
 
 lxqt-build-tools (0.4.0-1) experimental; urgency=medium
@@ -44,7 +57,7 @@ lxqt-build-tools (0.4.0-1) experimental; urgency=medium
 lxqt-build-tools (0.3.2-1) unstable; urgency=medium
 
   * Cherry-picking upstream version 0.3.2.
-  * Switched Architecture any --> all  
+  * Switched Architecture any --> all
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 14 Jan 2017 00:55:40 +0100
 
@@ -58,7 +71,7 @@ lxqt-build-tools (0.3.1-1) unstable; urgency=medium
 lxqt-build-tools (0.3.0-1) unstable; urgency=medium
 
   * Cherry-picking upstream version 0.3.0.
-  * Fixed VCS-Fields to branch debian/sid 
+  * Fixed VCS-Fields to branch debian/sid
 
  -- Alf Gaida <agaida@siduction.org>  Tue, 06 Dec 2016 22:27:16 +0100
 
