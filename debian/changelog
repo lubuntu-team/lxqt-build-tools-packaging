@@ -1,3 +1,10 @@
+lxqt-build-tools (0.4.0-7) unstable; urgency=medium
+
+  * Really fixed VCS fields
+  * Fixed watch file
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 29 Apr 2018 23:12:38 +0200
+
 lxqt-build-tools (0.4.0-6) unstable; urgency=medium
 
   * Bumped compat to 11
