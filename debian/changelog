@@ -1,3 +1,9 @@
+lxqt-build-tools (0.5.0-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Mon, 21 May 2018 21:34:14 -0500
+
 lxqt-build-tools (0.4.0-7) unstable; urgency=medium
 
   * Really fixed VCS fields
