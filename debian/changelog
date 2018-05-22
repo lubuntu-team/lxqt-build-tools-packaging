@@ -2,6 +2,7 @@ lxqt-build-tools (0.5.0-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Update Vcs-* and Maintainer to Lubuntu values.
+  * Update copyright.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Mon, 21 May 2018 21:34:14 -0500
 

@@ -5,6 +5,8 @@ Source: https://github.com/lxqt/lxqt-build-tools
 Files: *
 Copyright: 2012-2018 LXQt team
            2010-2012 Razor team
+           2017-2018 Luís Pereira <luis.artur.pereira@gmail.com>
+           2014 Alex Merry <alex.merry@kde.org>
 License: BSD-3-Clause
 
 Files: debian/*
