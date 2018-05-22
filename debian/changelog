@@ -1,11 +1,11 @@
-lxqt-build-tools (0.5.0-0ubuntu1) UNRELEASED; urgency=medium
+lxqt-build-tools (0.5.0-0ubuntu1) cosmic; urgency=medium
 
   * New upstream release.
   * Update Vcs-* and Maintainer to Lubuntu values.
   * Update copyright.
   * Update build depends.
 
- -- Simon Quigley <tsimonq2@ubuntu.com>  Mon, 21 May 2018 21:34:14 -0500
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Mon, 21 May 2018 21:42:16 -0500
 
 lxqt-build-tools (0.4.0-7) unstable; urgency=medium
 
