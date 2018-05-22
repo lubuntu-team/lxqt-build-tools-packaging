@@ -1,5 +1,6 @@
 Source: lxqt-build-tools
-Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
+Maintainer: Lubuntu Developers <lubuntu-devel@lists.ubuntu.com>
+XSBC-Original-Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
 Uploaders: Alf Gaida <agaida@siduction.org>,
            ChangZhuo Chen (陳昌倬) <czchen@debian.org>
 Section: devel
@@ -10,8 +11,10 @@ Build-Depends: debhelper (>= 11~),
                pkg-config,
                qtbase5-dev
 Standards-Version: 4.1.4
-Vcs-Browser: https://salsa.debian.org/lxqt-team/lxqt-build-tools
-Vcs-Git: https://salsa.debian.org/lxqt-team/lxqt-build-tools.git
+Vcs-Browser: https://phab.lubuntu.me/source/lxqt-build-tools/
+Vcs-Git: https://phab.lubuntu.me/source/lxqt-build-tools.git
+XS-Debian-Vcs-Browser: https://salsa.debian.org/lxqt-team/lxqt-build-tools
+XS-Debian-Vcs-Git: https://salsa.debian.org/lxqt-team/lxqt-build-tools.git
 Homepage: https://github.com/lxqt/lxqt-build-tools
 
 Package: lxqt-build-tools
