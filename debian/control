@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 11),
                libglib2.0-dev,
                pkg-config,
                qtbase5-dev
-Standards-Version: 4.1.4
+Standards-Version: 4.3.0
 Vcs-Browser: https://phab.lubuntu.me/source/lxqt-build-tools/
 Vcs-Git: https://phab.lubuntu.me/source/lxqt-build-tools.git
 XS-Debian-Vcs-Browser: https://salsa.debian.org/lxqt-team/lxqt-build-tools
