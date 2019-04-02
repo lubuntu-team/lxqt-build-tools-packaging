@@ -3,14 +3,12 @@ Upstream-Name: lxqt-build-tools
 Source: https://github.com/lxqt/lxqt-build-tools
 
 Files: *
-Copyright: 2012-2018 LXQt team
+Copyright: 2012-2019 LXQt team
            2010-2012 Razor team
-           2017-2018 Luís Pereira <luis.artur.pereira@gmail.com>
-           2014 Alex Merry <alex.merry@kde.org>
 License: BSD-3-Clause
 
 Files: debian/*
-Copyright: 2015-2018 Alf Gaida <agaida@siduction.org>
+Copyright: 2015-2019 Alf Gaida <agaida@siduction.org>
 License: BSD-3-Clause
 
 License: BSD-3-Clause

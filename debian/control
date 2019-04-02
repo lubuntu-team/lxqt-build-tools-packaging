@@ -5,7 +5,7 @@ Uploaders: Alf Gaida <agaida@siduction.org>,
            ChangZhuo Chen (陳昌倬) <czchen@debian.org>
 Section: devel
 Priority: optional
-Build-Depends: debhelper (>= 12),
+Build-Depends: debhelper-compat (= 12),
                cmake,
                libglib2.0-dev,
                pkg-config,
@@ -23,7 +23,6 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          binutils,
          cmake,
-         libqt5xdg-dev (>= 3.1.0),
          libglib2.0-dev (>= 2.5.0),
          pkg-config,
          qttools5-dev,

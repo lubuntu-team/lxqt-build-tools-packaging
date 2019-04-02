@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright 2015-2017 Alf Gaida <agaida@siduction.org>
+# Copyright 2015-2019 Alf Gaida <agaida@siduction.org>
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
@@ -29,6 +29,33 @@
 # Usage: get-snapshot (in package dir)
 # One will need a debian/repository.spec file in place
 
+
+usage()
+{
+cat << EOF
+usage: $0 options
+
+#ToDo Write some useful description
+
+OPTIONS:
+  -h      Show this message
+  -b      build (default="yes")
+  -c      clean (default="yes")
+  -g      git commit (default="yes")
+  -n      dryrun (aka. do nothing default="no")
+  -p      git push (default="yes")
+  -u      upload (default="yes")
+EOF
+}
+
+
+build="yes"
+clean="yes"
+gitcommit="yes"
+push="yes"
+upload="yes"
+dryrun="no"
+
 unset commit
 unset branch
 target_dir="snapshot"
@@ -44,8 +71,41 @@ else
     exit 2;
 fi
 
-ls | grep -v "debian" | xargs rm -rf
-rm -rf .pc
+while getopts “b:c:g:u:hn” OPTION; do
+    case ${OPTION} in
+        h) usage
+           exit
+           ;;
+        b) build=${OPTARG}
+           ;;
+        c) clean=${OPTARG}
+           ;;
+        g) gitcommit=${OPTARG}
+           ;;
+        n) dryrun="yes";
+           echo -e "\n\n ... dry run ... \n\n"
+           ;;
+        p) push=${OPTARG}
+           ;;
+        u) upload=${OPTARG}
+           ;;
+    esac
+done
+
+if [ "$dryrun" = "yes" ]; then
+    build="no"
+    clean="no"
+    gitcommit="no"
+    push="no"
+    upload="no"
+fi
+
+
+if [ "$dryrun" = "no" ]; then
+    debclean -d
+    ls | grep -v "debian" | xargs rm -rf
+    rm -rf .pc
+fi
 
 echo ""
 echo "┌───────────────────┐"
@@ -69,13 +129,85 @@ pushd "$snapdir" &>/dev/null
     pushd snapshot &>/dev/null
         [  ! -z "${commit}" ] &&  git reset --hard "${commit}"
         description=$(git describe --tags)
+        commitsaftertag=$(git describe --tags | sed "s#[^-]*-##")
+        echo "ERRORCODE $?"
         # cleanup must be defined in repository
         [ "$declared" ] && cleanup
     popd &>/dev/null
     tar cfJ snapshot.orig.tar.xz snapshot
 popd &>/dev/null
-tar xf "$snapdir/snapshot.orig.tar.xz" --strip-components 1
-echo ""
-echo "New snapshot: $description"
-dch "New snapshot: $description"
-rm -rf "$snapdir"
+
+if [ "$dryrun" = "no" ]; then
+    tar xf "$snapdir/snapshot.orig.tar.xz" --strip-components 1
+    rm -rf "$snapdir"
+fi
+
+# New Version
+currentversion=$(dpkg-parsechangelog -S version)
+newversion="${baseversion}${commitsaftertag}-1"
+
+if [ ! "$currentversion" "==" "$newversion" ]; then
+    echo -e "\n\nCurrent Version: $currentversion"
+    echo -e "New Version: $newversion\n\n"
+else
+   echo -e "\n\nCurrent Version: $currentversion"
+   echo -e "New Version: $newversion\n\n"
+   echo -e "\n\nkeine neue version\n\n"
+   exit 0 # should be handled with a variable
+fi
+
+# Add a new entry to debian changelog
+if [ "$dryrun" = "no" ]; then
+    dch --newversion "$newversion" \
+        --distribution "${distribution}" \
+        --force-distribution \
+        "New snapshot: $description"
+fi
+
+# commit changes to git
+if [ "gitcommit" = "yes" ]; then
+    echo "gitcommit: $gitcommit"
+    git add --all
+    git commit -m "New snapshot: $description"
+    git push
+fi
+
+# clean up old builds
+if [ "$clean" = "yes" ]; then
+    echo "clean: $clean"
+    echo "dryrun: $dryrun"
+    debclean
+fi
+
+# build a source package
+if [ "$build" = "yes" ]; then
+    echo "build: $build"
+    echo "dryrun: $dryrun"
+    debuild -S
+fi
+
+# upload source package
+if [ "$upload" = "yes" ]; then
+    echo "upload: $upload"
+    echo "dryrun: $dryrun"
+    uploads=$(ls ../*changes)
+    for i in $uploads; do
+        dput $uploadrepo $i
+    done
+fi
+
+# git commit
+if [ "$gitcommit" = "yes" ]; then
+    echo "gitcommit: $gitcommit"
+    echo "dryrun: $dryrun"
+    git add --all
+    git commit -m "New snapshot: $newversion"
+fi
+
+# git push
+if [ "$push" = "yes" ]; then
+    echo "push: $push"
+    echo "dryrun: $dryrun"
+    git push
+fi
+
