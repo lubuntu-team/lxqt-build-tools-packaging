@@ -3,6 +3,7 @@ lxqt-build-tools (0.7.0-0ubuntu1) UNRELEASED; urgency=medium
   * New upstream release.
     - Update the upstream signing key.
   * Bump Standards-version to 4.5.0, no changes needed.
+  * Run wrap-and-sort.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Tue, 28 Apr 2020 18:19:05 -0500
 

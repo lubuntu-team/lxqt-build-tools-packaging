@@ -5,8 +5,8 @@ Uploaders: Alf Gaida <agaida@siduction.org>,
            ChangZhuo Chen (陳昌倬) <czchen@debian.org>
 Section: devel
 Priority: optional
-Build-Depends: debhelper-compat (= 12),
-               cmake,
+Build-Depends: cmake,
+               debhelper-compat (= 12),
                libglib2.0-dev,
                pkg-config,
                qtbase5-dev
@@ -19,16 +19,15 @@ Homepage: https://github.com/lxqt/lxqt-build-tools
 
 Package: lxqt-build-tools
 Architecture: all
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         binutils,
+Depends: binutils,
          cmake,
          libglib2.0-dev (>= 2.5.0),
          pkg-config,
          qttools5-dev,
-         qttools5-dev-tools
-Recommends: git,
-            lintian
+         qttools5-dev-tools,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Recommends: git, lintian
 Description: Build tools for the LXQt desktop environment
  LXQt is an advanced, easy-to-use, and fast desktop environment based on Qt
  technologies. It has been tailored for users who value simplicity, speed, and
