@@ -1,11 +1,11 @@
-lxqt-build-tools (0.7.0-0ubuntu1) UNRELEASED; urgency=medium
+lxqt-build-tools (0.7.0-0ubuntu1) groovy; urgency=medium
 
   * New upstream release.
     - Update the upstream signing key.
   * Bump Standards-version to 4.5.0, no changes needed.
   * Run wrap-and-sort.
 
- -- Simon Quigley <tsimonq2@ubuntu.com>  Tue, 28 Apr 2020 18:19:05 -0500
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 03 Jun 2020 22:06:40 -0500
 
 lxqt-build-tools (0.6.0-2ubuntu1) disco; urgency=medium
 
