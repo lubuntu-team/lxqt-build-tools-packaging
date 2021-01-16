@@ -1,3 +1,25 @@
+lxqt-build-tools (0.8.0-1ubuntu1) hirsute; urgency=medium
+
+  * Merge from Debian unstable. No other changes.
+
+ -- Raman Sarda <theloudspeaker@ubuntu.com>  Sat, 16 Jan 2021 02:10:00 +0530
+
+lxqt-build-tools (0.8.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sophie Brun ]
+  * Update the debian/upstream/signing-key.asc
+  * New upstream version 0.8.0
+  * Move the specific lxqt build scripts in usr/share/lxqt-build-tools/bin
+  * Bump Standards-Version to 4.5.1 (no changes)
+  * Update debian/copyright
+
+  [ Raphael Hertzog ]
+  * Drop ${shlib:Depends} as this is an arch all package
+
+ -- Sophie Brun <sophie@offensive-security.com>  Wed, 16 Dec 2020 09:51:50 +0100
+
 lxqt-build-tools (0.7.0-0ubuntu1) groovy; urgency=medium
 
   * New upstream release.
@@ -6,6 +28,16 @@ lxqt-build-tools (0.7.0-0ubuntu1) groovy; urgency=medium
   * Run wrap-and-sort.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 03 Jun 2020 22:06:40 -0500
+
+lxqt-build-tools (0.6.0-3) unstable; urgency=medium
+
+  * Switched to gbp
+  * Bumped Standards-Version to 4.4.0, no changes needed
+  * Added debin/bin/gbp-buildpackage - first iteration
+  * Added debian/bin/gbp-import-orig - first iteration
+  * Fixed .gitignore
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 26 Aug 2019 02:31:21 +0200
 
 lxqt-build-tools (0.6.0-2ubuntu1) disco; urgency=medium
 
@@ -158,3 +190,4 @@ lxqt-build-tools (0.1.0-1) unstable; urgency=medium
   * Initial release (Closes: #839943)
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 14 Oct 2016 23:05:03 +0200
+

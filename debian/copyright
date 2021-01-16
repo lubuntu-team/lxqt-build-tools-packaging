@@ -7,6 +7,13 @@ Copyright: 2012-2019 LXQt team
            2010-2012 Razor team
 License: BSD-3-Clause
 
+Files: cmake/find-modules/FindXdgEmail.cmake
+ cmake/find-modules/FindXdgMime.cmake cmake/find-modules/FindXdgOpen.cmake
+ cmake/find-modules/FindXdgScreensaver.cmake
+ cmake/find-modules/FindXdgSettings.cmake
+Copyright: 2019, Luís Pereira <luis.artur.pereira@gmail.com>
+License: BSD-3-Clause
+
 Files: debian/*
 Copyright: 2015-2019 Alf Gaida <agaida@siduction.org>
 License: BSD-3-Clause

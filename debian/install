@@ -1,2 +1,2 @@
-debian/bin/* /usr/bin
+debian/bin/* /usr/share/lxqt-build-tools/bin
 debian/usr/* /usr
