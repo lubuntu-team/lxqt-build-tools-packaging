@@ -6,7 +6,7 @@ Uploaders: Alf Gaida <agaida@siduction.org>,
 Section: devel
 Priority: optional
 Build-Depends: cmake,
-               debhelper-compat (= 12),
+               debhelper-compat (= 13),
                libglib2.0-dev,
                pkg-config,
                qtbase5-dev
@@ -25,7 +25,7 @@ Depends: binutils,
          pkg-config,
          qttools5-dev,
          qttools5-dev-tools,
-         ${misc:Depends},
+         ${misc:Depends}
 Recommends: git, lintian
 Description: Build tools for the LXQt desktop environment
  LXQt is an advanced, easy-to-use, and fast desktop environment based on Qt

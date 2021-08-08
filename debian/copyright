@@ -7,15 +7,61 @@ Copyright: 2012-2019 LXQt team
            2010-2012 Razor team
 License: BSD-3-Clause
 
-Files: cmake/find-modules/FindXdgEmail.cmake
- cmake/find-modules/FindXdgMime.cmake cmake/find-modules/FindXdgOpen.cmake
- cmake/find-modules/FindXdgScreensaver.cmake
- cmake/find-modules/FindXdgSettings.cmake
-Copyright: 2019, Luís Pereira <luis.artur.pereira@gmail.com>
+Files: lxqt-transupdate
+Copyright: 2018, Alf Gaida <agaida@siduction.org>
+License: BSD-3-Clause
+
+Files: cmake/find-modules/FindClazy.cmake
+       cmake/find-modules/FindXdgEmail.cmake
+       cmake/find-modules/FindXdgMime.cmake
+       cmake/find-modules/FindXdgOpen.cmake
+       cmake/find-modules/FindXdgScreensaver.cmake
+       cmake/find-modules/FindXdgSettings.cmake
+       cmake/find-modules/FindXdgUserDirs.cmake
+       cmake/find-modules/FindXKBCommon.cmake
+       cmake/find-modules/FindXTerm.cmake
+       cmake/modules/LXQtCreatePkgConfigFile.cmake
+       cmake/modules/LXQtCreatePortableHeaders.cmake
+       cmake/modules/LXQtPreventInSourceBuilds.cmake
+       cmake/modules/LXQtTranslate.cmake
+       cmake/modules/LXQtTranslateTs.cmake.in
+       cmake/modules/LXQtTranslationLoader.cmake
+       cmake/modules/Qt5TranslationLoader.cmake
+Copyright: 2014-2015, 2017-2020, Luís Pereira <luis.artur.pereira@gmail.com>
+License: BSD-3-Clause
+
+Files: cmake/find-modules/FindFontconfig.cmake
+Copyright: 2018, Volker Krause <vkrause@kde.org>
+           2006, 2007, Laurent Montel <montel@kde.org>
+License: BSD-3-Clause
+
+Files: cmake/find-modules/FindGLIB.cmake
+Copyright: 2016, Luís Pereira <luis.artur.pereira@gmail.com>
+           2012, Raphael Kubo da Costa <rakuco@webkit.org>
+License: BSD-3-Clause
+
+Files: cmake/find-modules/FindUDev.cmake
+Copyright: 2016, Luís Pereira <luis.artur.pereira@gmail.com>
+           2010, Rafael Fernández López <ereslibre@kde.org>
+License: BSD-3-Clause
+
+Files: cmake/find-modules/FindXCB.cmake
+Copyright: 2015, Jari Vetoniemi
+License: BSD-3-Clause
+
+Files: cmake/modules/ECMFindModuleHelpers.cmake
+Copyright: 2014, Alex Merry <alex.merry@kde.org>
+License: BSD-3-Clause
+
+Files: cmake/modules/LXQtCompilerSettings.cmake
+Copyright: 2015, Luís Pereira <luis.artur.pereira@gmail.com>
+           2015, Palo Kisa <palo.kisa@gmail.com>
+           2013, Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
 License: BSD-3-Clause
 
 Files: debian/*
-Copyright: 2015-2019 Alf Gaida <agaida@siduction.org>
+Copyright: 2021, Lubuntu Developers <lubuntu-devel@lists.ubuntu.com>
+           2015-2019 Alf Gaida <agaida@siduction.org>
 License: BSD-3-Clause
 
 License: BSD-3-Clause
