@@ -1,3 +1,22 @@
+lxqt-build-tools (0.11.0-1) unstable; urgency=medium
+
+  * Team Upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Repository, Repository-Browse.
+  * Remove obsolete field Name from debian/upstream/metadata (already present in
+    machine-readable debian/copyright).
+  * Avoid explicitly specifying -Wl,--as-needed linker flag.
+
+  [ Yao Wei (魏銘廷) ]
+  * debian/patches: Use gdesktopappinfo.h to find gio-unix-2.0
+  * debian/upstream/metadata: Remove Repository-Browser (typoed entry)
+  * debian/control:
+    - Bump Standards-Version to 4.6.1;  No related changes.
+    - Update version dependency of libglib2.0-dev
+
+ -- Yao Wei (魏銘廷) <mwei@debian.org>  Sat, 17 Sep 2022 21:17:34 +0800
+
 lxqt-build-tools (0.11.0-0.1) unstable; urgency=medium
 
   * Non-maintainer upload.
