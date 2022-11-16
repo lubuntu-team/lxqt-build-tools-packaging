@@ -1,17 +1,20 @@
-lxqt-build-tools (0.9.0-0ubuntu1) impish; urgency=medium
+lxqt-build-tools (0.10.0-1) unstable; urgency=medium
 
-  * New upstream version 0.9.0
+  [ Andrew Lee (李健秋) ]
+  * New upstream version 0.10.0
+  * Add debian/salsa-ci.yml file.
+
+  [ Severus Septimius ]
+  * Update debian/changelog
   * Update debian/copyright
-  * Update debian/control to use dephelper-compat (= 13)
-  * Run wrap-and-sort
+  * Bump Standards to 4.6.0 (no changes)
 
- -- apt-ghetto <apt-ghetto@protonmail.com>  Fri, 06 Aug 2021 17:09:12 +0200
+  [ Andrew Lee (李健秋) ]
+  * Update debian/copyright.
+  * Added myself as uploader.
+  * Use debhelper-compat = 13, no changes needed.
 
-lxqt-build-tools (0.8.0-1ubuntu1) hirsute; urgency=medium
-
-  * Merge from Debian unstable. No other changes.
-
- -- Raman Sarda <theloudspeaker@ubuntu.com>  Sat, 16 Jan 2021 02:10:00 +0530
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Sat, 08 Jan 2022 18:01:14 +0800
 
 lxqt-build-tools (0.8.0-1) unstable; urgency=medium
 
@@ -29,15 +32,6 @@ lxqt-build-tools (0.8.0-1) unstable; urgency=medium
 
  -- Sophie Brun <sophie@offensive-security.com>  Wed, 16 Dec 2020 09:51:50 +0100
 
-lxqt-build-tools (0.7.0-0ubuntu1) groovy; urgency=medium
-
-  * New upstream release.
-    - Update the upstream signing key.
-  * Bump Standards-version to 4.5.0, no changes needed.
-  * Run wrap-and-sort.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 03 Jun 2020 22:06:40 -0500
-
 lxqt-build-tools (0.6.0-3) unstable; urgency=medium
 
   * Switched to gbp
@@ -47,13 +41,6 @@ lxqt-build-tools (0.6.0-3) unstable; urgency=medium
   * Fixed .gitignore
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 26 Aug 2019 02:31:21 +0200
-
-lxqt-build-tools (0.6.0-2ubuntu1) disco; urgency=medium
-
-  * Merge from Debian testing. Remaining changes:
-    - Update Vcs-* and Maintainer to Lubuntu values.
-
- -- Rik Mills <rikmills@kubuntu.org>  Wed, 27 Mar 2019 17:07:06 +0000
 
 lxqt-build-tools (0.6.0-2) unstable; urgency=medium
 
@@ -72,28 +59,11 @@ lxqt-build-tools (0.6.0-1) unstable; urgency=medium
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 27 Jan 2019 13:11:49 +0100
 
-lxqt-build-tools (0.6.0-0ubuntu1) disco; urgency=medium
-
-  * New upstream release.
-  * Bump Standards-version to 4.3.0, no changes needed.
-  * Bump debhelper compat to 12, no changes needed.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Fri, 25 Jan 2019 22:01:43 -0600
-
 lxqt-build-tools (0.5.0-1) unstable; urgency=medium
 
   * Cherry-picking new upstream release 0.5.0
 
  -- Alf Gaida <agaida@siduction.org>  Wed, 23 May 2018 02:50:35 +0200
-
-lxqt-build-tools (0.5.0-0ubuntu1) cosmic; urgency=medium
-
-  * New upstream release.
-  * Update Vcs-* and Maintainer to Lubuntu values.
-  * Update copyright.
-  * Update build depends.
-
- -- Simon Quigley <tsimonq2@ubuntu.com>  Mon, 21 May 2018 21:42:16 -0500
 
 lxqt-build-tools (0.4.0-7) unstable; urgency=medium
 
@@ -199,4 +169,3 @@ lxqt-build-tools (0.1.0-1) unstable; urgency=medium
   * Initial release (Closes: #839943)
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 14 Oct 2016 23:05:03 +0200
-
