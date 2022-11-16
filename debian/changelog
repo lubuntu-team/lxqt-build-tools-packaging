@@ -2,6 +2,7 @@ lxqt-build-tools (0.12.0-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Actually fix the uscan error. Thanks for the help, arraybolt3!
+  * Lubuntuify the package slightly, to make debhelper happy.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 16 Nov 2022 16:48:56 -0600
 
