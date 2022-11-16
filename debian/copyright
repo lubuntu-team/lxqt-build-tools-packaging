@@ -3,7 +3,7 @@ Upstream-Name: lxqt-build-tools
 Source: https://github.com/lxqt/lxqt-build-tools
 
 Files: *
-Copyright: 2012-2021 LXQt team
+Copyright: 2012-2022 LXQt team
            2010-2012 Razor team
 License: BSD-3-Clause
 
