@@ -1,8 +1,10 @@
-lxqt-build-tools (0.10.0-1ubuntu1) jammy; urgency=medium
+lxqt-build-tools (0.11.0-0.1) unstable; urgency=medium
 
-  * Add a patch to support GLib ≥ 2.71.1.
+  * Non-maintainer upload.
+  * New upstream release.
+    - Fixes compatibility with GLib ≥ 2.71.1 (closes: #1008416).
 
- -- Dmitry Shachnev <mitya57@ubuntu.com>  Sat, 19 Mar 2022 20:15:43 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 14 May 2022 16:00:20 +0300
 
 lxqt-build-tools (0.10.0-1) unstable; urgency=medium
 
