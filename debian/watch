@@ -1,3 +1,3 @@
 version=4
-opts="pgpsigurlmangle=s/$/.asc/" \
-https://github.com/lxqt/lxqt-build-tools/releases .*/lxqt-build-tools-([\d\.]+).tar.xz
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/lxqt-build-tools-$1\.tar\.gz/,pgpsigurlmangle=s/$/.asc/ \
+  https://github.com/lxqt/lxqt-build-tools/tags .*/v?(\d\S*)\.tar\.gz

@@ -1,3 +1,9 @@
+lxqt-build-tools (0.11.0-2) unstable; urgency=medium
+
+  * debian/watch: fix uscan error.
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Sat, 22 Oct 2022 18:45:37 +0800
+
 lxqt-build-tools (0.11.0-1) unstable; urgency=medium
 
   * Team Upload
