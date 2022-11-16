@@ -1,3 +1,9 @@
+lxqt-build-tools (0.12.0-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 16 Nov 2022 16:48:56 -0600
+
 lxqt-build-tools (0.11.0-2) unstable; urgency=medium
 
   * debian/watch: fix uscan error.
