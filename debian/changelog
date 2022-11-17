@@ -1,3 +1,12 @@
+lxqt-build-tools (0.12.0-0ubuntu1~ppa2) jammy; urgency=medium
+
+  * Revert a non-backwards-compatible yet important change done for later
+    releases, to adapt for a new glib2.0 version. We don't have the capacity
+    to maintain glib2.0 in Backports, so simply revert it back to "the way it
+    was."
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 16 Nov 2022 18:23:59 -0600
+
 lxqt-build-tools (0.12.0-0ubuntu1~ppa1) jammy; urgency=medium
 
   * Backport to Jammy.

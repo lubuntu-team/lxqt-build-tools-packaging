@@ -23,7 +23,7 @@ Architecture: all
 Depends: ${misc:Depends},
          binutils,
          cmake,
-         libglib2.0-dev (>= 2.73.1),
+         libglib2.0-dev,
          pkg-config,
          qttools5-dev,
          qttools5-dev-tools
