@@ -17,6 +17,7 @@ Vcs-Git: https://git.lubuntu.me/Lubuntu/lxqt-build-tools-packaging.git
 XS-Debian-Vcs-Browser: https://salsa.debian.org/lxqt-team/lxqt-build-tools
 XS-Debian-Vcs-Git: https://salsa.debian.org/lxqt-team/lxqt-build-tools.git
 Homepage: https://github.com/lxqt/lxqt-build-tools
+Rules-Requires-Root: no
 
 Package: lxqt-build-tools
 Architecture: all

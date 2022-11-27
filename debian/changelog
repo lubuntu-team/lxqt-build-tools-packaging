@@ -1,3 +1,9 @@
+lxqt-build-tools (0.12.0-0ubuntu2) UNRELEASED; urgency=medium
+
+  * Added 'Rules-Requires-Root: no'.
+
+ -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Sun, 27 Nov 2022 13:48:55 -0600
+
 lxqt-build-tools (0.12.0-0ubuntu1) lunar; urgency=medium
 
   * New upstream release.
