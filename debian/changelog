@@ -1,4 +1,4 @@
-lxqt-build-tools (0.12.0-0ubuntu2) UNRELEASED; urgency=medium
+lxqt-build-tools (0.12.0-0ubuntu2) lunar; urgency=medium
 
   * Added 'Rules-Requires-Root: no'.
   * Overhauled copyright file.
