@@ -3,15 +3,41 @@ Upstream-Name: lxqt-build-tools
 Source: https://github.com/lxqt/lxqt-build-tools
 
 Files: *
-Copyright: 2012-2022 LXQt team
+Copyright: 2012-2021 LXQt team
            2010-2012 Razor team
 License: BSD-3-Clause
 
-Files: cmake/find-modules/FindXdgEmail.cmake
- cmake/find-modules/FindXdgMime.cmake cmake/find-modules/FindXdgOpen.cmake
- cmake/find-modules/FindXdgScreensaver.cmake
- cmake/find-modules/FindXdgSettings.cmake
-Copyright: 2019, Luís Pereira <luis.artur.pereira@gmail.com>
+Files: lxqt-transupdate
+       cmake/find-modules/FindClazy.cmake
+       cmake/find-modules/FindFontconfig.cmake
+       cmake/find-modules/FindUDev.cmake
+       cmake/find-modules/FindXCB.cmake
+       cmake/find-modules/FindXdgEmail.cmake
+       cmake/find-modules/FindXdgMime.cmake
+       cmake/find-modules/FindXdgOpen.cmake
+       cmake/find-modules/FindXdgScreensaver.cmake
+       cmake/find-modules/FindXdgSettings.cmake
+       cmake/find-modules/FindXdgUserDirs.cmake
+       cmake/find-modules/FindXKBCommon.cmake
+       cmake/find-modules/FindXTerm.cmake
+       cmake/modules/ECMFindModuleHelpers.cmake
+       cmake/modules/LXQtCompilerSettings.cmake
+       cmake/modules/LXQtCreatePkgConfigFile.cmake
+       cmake/modules/LXQtCreatePortableHeaders.cmake
+       cmake/modules/LXQtPreventInSourceBuilds.cmake
+       cmake/modules/LXQtTranslate.cmake
+       cmake/modules/LXQtTranslateTs.cmake.in
+       cmake/modules/LXQtTranslationLoader.cmake
+       cmake/modules/Qt5TranslationLoader.cmake
+Copyright: 2018      Alf Gaida <agaida@siduction.org>
+           2014-2020 Luís Pereira <luis.artur.pereira@gmail.com>
+           2006-2007 Laurent Montel <montel@kde.org>
+           2018      Volker Krause <vkrause@kde.org>
+           2010      Rafael Fernández López <ereslibre@kde.org>
+           2015      Jari Vetoniemi
+           2014      Alex Merry <alex.merry@kde.org>
+           2015      Palo Kisa <palo.kisa@gmail.com>
+           2013      Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
 License: BSD-3-Clause
 
 Files: debian/*
@@ -22,7 +48,12 @@ Copyright:
  2020      Raphaël Hertzog <raphael@offensive-security.com>
  2022      Andrew Lee (李健秋) <ajqlee@debian.org>
  2022      Severus Septimius <severusseptimius7@gmail.com>
+ 2022      Aaron Rainbolt <arraybolt3@ubuntu.com>
+ 2022      Simon Quigley <tsimonq2@ubuntu.com>
 License: BSD-3-Clause
+
+Files: debian/usr/share/lxqt-build-tools/repository.spec.example
+License: WTFPL-2
 
 License: BSD-3-Clause
  Redistribution and use in source and binary forms, with or without
@@ -49,3 +80,14 @@ License: BSD-3-Clause
  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+License: WTFPL-2
+ Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+ .
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
+ .
+           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+ .
+ 0. You just DO WHAT THE FUCK YOU WANT TO.
