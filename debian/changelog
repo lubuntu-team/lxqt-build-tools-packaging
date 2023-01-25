@@ -1,3 +1,10 @@
+lxqt-build-tools (0.12.0-0ubuntu3) lunar; urgency=medium
+
+  * Build using C++17 by default instead of C++14, to be compatible with KDE
+    Frameworks and Qt.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 25 Jan 2023 11:36:17 -0600
+
 lxqt-build-tools (0.12.0-0ubuntu2) lunar; urgency=medium
 
   * Added 'Rules-Requires-Root: no'.

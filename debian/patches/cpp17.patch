@@ -1,0 +1,24 @@
+Description: Bump the minimum compatibility level to C++17
+Author: Simon Quigley <tsimonq2@lubuntu.me>
+Origin: vendor
+Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1029611
+Forwarded: https://github.com/lxqt/lxqt-build-tools/pull/83
+Last-Update: 2023-01-25
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/cmake/modules/LXQtCompilerSettings.cmake
++++ b/cmake/modules/LXQtCompilerSettings.cmake
+@@ -181,11 +181,11 @@ endif()
+ 
+ 
+ #-----------------------------------------------------------------------------
+-# CXX14 requirements - no checks, we just set it
++# CXX17 requirements - no checks, we just set it
+ #-----------------------------------------------------------------------------
+ set(CMAKE_CXX_STANDARD_REQUIRED True)
+ set(CMAKE_CXX_EXTENSIONS OFF)
+-set(CMAKE_CXX_STANDARD 14 CACHE STRING "C++ ISO Standard")
++set(CMAKE_CXX_STANDARD 17 CACHE STRING "C++ ISO Standard")
+ 
+ 
+ #-----------------------------------------------------------------------------
