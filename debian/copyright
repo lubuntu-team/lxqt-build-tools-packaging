@@ -49,9 +49,10 @@ Copyright:
  2022      Andrew Lee (李健秋) <ajqlee@debian.org>
  2022      Severus Septimius <severusseptimius7@gmail.com>
  2022      Aaron Rainbolt <arraybolt3@ubuntu.com>
- 2022      Simon Quigley <tsimonq2@ubuntu.com>
+ 2022-2023 Simon Quigley <tsimonq2@ubuntu.com>
 License: BSD-3-Clause
 
+Copyright: Alf Gaida <agaida@siduction.org>
 Files: debian/usr/share/lxqt-build-tools/repository.spec.example
 License: WTFPL-2
 
