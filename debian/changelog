@@ -1,3 +1,9 @@
+lxqt-build-tools (0.13.0-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 10 May 2023 11:18:09 -0500
+
 lxqt-build-tools (0.12.0-0ubuntu3) lunar; urgency=medium
 
   * Build using C++17 by default instead of C++14, to be compatible with KDE
