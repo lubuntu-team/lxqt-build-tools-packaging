@@ -1,3 +1,9 @@
+lxqt-build-tools (0.13.0-0ubuntu1~ppa1) jammy; urgency=medium
+
+  * Backport to Jammy.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Wed, 26 Jul 2023 18:56:58 -0500
+
 lxqt-build-tools (0.13.0-0ubuntu1) mantic; urgency=medium
 
   * New upstream release.
