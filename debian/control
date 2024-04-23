@@ -10,7 +10,7 @@ Build-Depends: cmake,
                debhelper-compat (= 13),
                libglib2.0-dev,
                pkg-config,
-               qtbase5-dev
+               qt6-base-dev
 Standards-Version: 4.6.2
 Vcs-Browser: https://git.lubuntu.me/Lubuntu/lxqt-build-tools-packaging
 Vcs-Git: https://git.lubuntu.me/Lubuntu/lxqt-build-tools-packaging.git
@@ -25,8 +25,8 @@ Depends: binutils,
          cmake,
          libglib2.0-dev (>= 2.73.1),
          pkg-config,
-         qttools5-dev,
-         qttools5-dev-tools,
+         qt6-tools-dev,
+         qt6-tools-dev-tools,
          ${misc:Depends}
 Recommends: git, lintian
 Description: Build tools for the LXQt desktop environment
