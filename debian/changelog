@@ -1,3 +1,9 @@
+lxqt-build-tools (2.1.0-0ubuntu3) plucky; urgency=medium
+
+  * Update Standards-Version to 4.7.1, no changes needed.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Fri, 21 Feb 2025 15:57:52 -0600
+
 lxqt-build-tools (2.1.0-0ubuntu2) plucky; urgency=medium
 
   * Bump the minimum C++ standard to 20.
