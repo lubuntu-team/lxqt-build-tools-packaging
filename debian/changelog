@@ -1,8 +1,9 @@
 lxqt-build-tools (2.2.0-0ubuntu1) questing; urgency=medium
 
   * New upstream release.
+  * Update copyright file
 
- -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 19 Apr 2025 00:31:58 -0500
+ -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Fri, 02 May 2025 17:47:05 -0500
 
 lxqt-build-tools (2.1.0-0ubuntu3) plucky; urgency=medium
 
