@@ -3,6 +3,7 @@ lxqt-build-tools (2.2.0-0ubuntu1) questing; urgency=medium
   * New upstream release.
   * Update copyright file
   * Update Standards-Version to 4.7.2, no changes needed.
+  * Add Lintian override for missing manual page for lxqt2-transupdate
 
  -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Fri, 02 May 2025 17:47:05 -0500
 
