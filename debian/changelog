@@ -4,6 +4,8 @@ lxqt-build-tools (2.3.0-0ubuntu1) resolute; urgency=medium
   * Update copyright file.
   * Update Standards-Version to 4.7.3, no changes needed.
   * Remove redundant 'Rules-Requires-Root: no' control line.
+  * Stop marking Debian-Vcs-Browser, Debian-Vcs-Git, and Original-Maintainer
+    control lines as experimental.
 
  -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Wed, 14 Jan 2026 11:38:01 -0600
 
