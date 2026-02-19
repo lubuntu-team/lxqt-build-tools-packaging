@@ -7,7 +7,7 @@ lxqt-build-tools (2.3.0-0ubuntu1) resolute; urgency=medium
   * Stop marking Debian-Vcs-Browser, Debian-Vcs-Git, and Original-Maintainer
     control lines as experimental.
 
- -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Wed, 14 Jan 2026 11:38:01 -0600
+ -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Thu, 19 Feb 2026 13:05:09 -0500
 
 lxqt-build-tools (2.2.1-0ubuntu1) questing; urgency=medium
 
