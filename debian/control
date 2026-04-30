@@ -5,13 +5,12 @@ Uploaders: Alf Gaida <agaida@siduction.org>,
            Andrew Lee (李健秋) <ajqlee@debian.org>,
            ChangZhuo Chen (陳昌倬) <czchen@debian.org>
 Section: devel
-Priority: optional
 Build-Depends: debhelper-compat (= 13),
                cmake,
                libglib2.0-dev,
                pkgconf,
                qt6-base-dev (>= 6.6.0)
-Standards-Version: 4.7.3
+Standards-Version: 4.7.4
 Vcs-Browser: https://git.lubuntu.me/Lubuntu/lxqt-build-tools-packaging
 Vcs-Git: https://git.lubuntu.me/Lubuntu/lxqt-build-tools-packaging.git
 Debian-Vcs-Browser: https://salsa.debian.org/lxqt-team/lxqt-build-tools
