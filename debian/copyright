@@ -3,7 +3,7 @@ Upstream-Name: lxqt-build-tools
 Source: https://github.com/lxqt/lxqt-build-tools
 
 Files: *
-Copyright: 2012-2025 LXQt team
+Copyright: 2012-2026 LXQt team
            2010-2012 Razor team
 License: BSD-3-Clause
 
@@ -28,8 +28,9 @@ Files: lxqt-transupdate
        cmake/modules/LXQtTranslateTs.cmake.in
        cmake/modules/LXQtTranslationLoader.cmake
        cmake/modules/Qt6TranslationLoader.cmake
+       cmake/modules/LXQtTranslateDesktop.sh
 Copyright: 2018      Alf Gaida <agaida@siduction.org>
-           2014-2020 Luís Pereira <luis.artur.pereira@gmail.com>
+           2014-2025 Luís Pereira <luis.artur.pereira@gmail.com>
            2006-2007 Laurent Montel <montel@kde.org>
            2018      Volker Krause <vkrause@kde.org>
            2010      Rafael Fernández López <ereslibre@kde.org>
