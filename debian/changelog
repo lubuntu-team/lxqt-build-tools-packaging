@@ -10,7 +10,7 @@ lxqt-build-tools (2.4.0-0ubuntu1) stonking; urgency=medium
   * Add cmake/modules/LXQtTranslateDesktop.sh to debian/copyright.
   * Bump LXQt team copyright year.
 
- -- Aaron Rainbolt <arraybolt3@ubuntu.com>  Mon, 04 May 2026 00:10:06 -0400
+ -- Simon Quigley <tsimonq2@debian.org>  Thu, 30 Apr 2026 12:17:36 -0500
 
 lxqt-build-tools (2.3.0-0ubuntu1) resolute; urgency=medium
 
